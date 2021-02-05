@@ -10,13 +10,17 @@
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/leighton"
         android:text="Hiragana"
         android:textColor="#CF1313"
-        android:textSize="24sp"
+        android:textFontWeight="@android:integer/status_bar_notification_info_maxnum"
+        android:textSize="45sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
 
     <ScrollView
         style="@android:style/Widget.Holo.ScrollView"
@@ -61,17 +65,17 @@
         android:layout_marginEnd="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginBottom="5dp"
+        android:onClick="onBottomAction"
         android:padding="2sp"
         android:text="Katakana"
         android:textColor="#040404"
         android:textSize="14sp"
-        app:backgroundTint="#8A8686"
-        app:iconTint="#CDC0C0"
+        app:backgroundTint="#E0D1B7"
+        app:cornerRadius="0sp"
+        app:iconTint="#6E6B7B"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:cornerRadius="0sp"
-        app:rippleColor="#878181"
-        android:onClick="onBottomAction"/>
+        app:rippleColor="#6E6B7B" />
 
     <Button
         android:id="@+id/buttonHira"
@@ -84,9 +88,9 @@
         android:text="Hiragana"
         android:textColor="#0E0E0E"
         android:textSize="14sp"
-        app:backgroundTint="#959393"
+        app:backgroundTint="#E0D1B7"
         app:cornerRadius="0sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/buttonkata"
-        app:rippleColor="#0E0E0E" />
+        app:rippleColor="#6E6B7B" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Hiragana layout
         LinearLayout hiraLayout = findViewById(R.id.LinearLayoutHira);
-        hiraLayout.setPadding(30 , 0 , 10 , 150);
+        hiraLayout.setPadding(30 , 0 , 10 , 200);
 
         // Generate hiragana rows
         LinearLayout row1 = new LinearLayout(this);
@@ -317,11 +317,21 @@ public class MainActivity extends AppCompatActivity {
                 kataLayout.setVisibility(View.VISIBLE);
                 hiraLayout.setVisibility(View.GONE);
                 title.setText("Katakana");
+                Button buttonKata = findViewById(R.id.buttonkata);
+                Button buttonHira = findViewById(R.id.buttonHira);
+
+                buttonKata.setBackgroundColor(Color.rgb(95, 74, 139));
+                buttonHira.setBackgroundColor(Color.rgb(224, 209, 183));
                 return;
             case R.id.buttonHira:
                 kataLayout.setVisibility(View.GONE);
                 hiraLayout.setVisibility(View.VISIBLE);
                 title.setText("Hiragana");
+                Button buttonKatakana = findViewById(R.id.buttonkata);
+                Button buttonHiragana = findViewById(R.id.buttonHira);
+
+                buttonHiragana.setBackgroundColor(Color.rgb(95, 74, 139));
+                buttonKatakana.setBackgroundColor(Color.rgb(224, 209, 183));
                 return;
         }
     }
@@ -359,3 +369,4 @@ class Character {
         return button;
     }
 }
+
